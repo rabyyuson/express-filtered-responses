@@ -41,7 +41,7 @@ Replace `<your-api-key>`, `<forms-api-url>`, `<form-id>`, `<port-number>`, and `
 To start the Express server locally, run:
 
 ```bash
-npm dev
+npm run dev
 ```
 
 This will start the server at the specified port, and the application will be ready to accept requests to filter form submissions.
@@ -73,7 +73,7 @@ Fetches filtered responses for a specified form ID.
 http://localhost:{PORT}/{FORM_ID}/filteredResponses?filters[0][id]={question.id}&filters[0][condition]={filter.condition}&filters[0][value]={question.value}
 ```
 
-and with variables replaced (note that these are only dummy values taken from Fillout's [response](https://www.fillout.com/help/fillout-rest-api#69c06593963c45ca9e7d682f4f2a4ccc)):
+and with variables replaced (note that these are only test values taken from Fillout's [response](https://www.fillout.com/help/fillout-rest-api#69c06593963c45ca9e7d682f4f2a4ccc)):
 
 ```bash
 http://localhost:3000/vso9PzRfHQus/filteredResponses?filters[0][id]=5AtgG35AAZVcrSVfRubvp1&filters[0][condition]=equals&filters[0][value]=Email
