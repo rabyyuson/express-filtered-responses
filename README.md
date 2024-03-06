@@ -38,12 +38,11 @@ Replace `<your-api-key>`, `<forms-api-url>`, `<form-id>`, `<port-number>`, and `
 
 ## Usage
 
-To start the Express server, run:
+To start the Express server locally, run:
 
 ```bash
-npm start
+npm dev
 ```
-
 
 This will start the server at the specified port, and the application will be ready to accept requests to filter form submissions.
 
