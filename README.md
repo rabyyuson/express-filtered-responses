@@ -7,7 +7,7 @@ This project is an Express.js application designed to filter form submissions ba
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/rabyyuson/fillout.git
+git clone https://github.com/rabyyuson/express-filtered-responses.git
 ```
 
 2. Navigate to the project directory:
