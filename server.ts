@@ -55,12 +55,12 @@ function applyFilter({ filter, responses }: ApplyFilter) {
 }
 
 /**
- * Filters responses based on provided filters.
+ * Filters response based on provided filters.
  * @param data The form submission data.
  * @param filters The filters to apply.
  * @returns Filtered responses along with metadata.
  */
-function filterResponses({ data, filters }: FilterResponse) {
+function filterResponse({ data, filters }: FilterResponse) {
     let responses: any = [];
     if (Array.isArray(filters)) {
         let draft = data.responses;
@@ -99,7 +99,7 @@ function filterResponses({ data, filters }: FilterResponse) {
     return {
         responses: responses.length ? responses : null,
         totalResponses: responses.length,
-        pageCount: Math.ceil(responses.length / Number(RESPONSES_LIMIT)),
+        pageCount: Math.ceil(responses.length / Number(RESPONSES_LIMIT))
     };
 }
 
@@ -136,7 +136,7 @@ app.get("/:formId/filteredResponses", async (request: Request, response: Respons
 
         if (data) {
             const { filters } = request.query;
-            const filteredResponse = filterResponses({ filters, data });
+            const filteredResponse = filterResponse({ filters, data });
             return response.send(filteredResponse);
         }
     } catch(error) {

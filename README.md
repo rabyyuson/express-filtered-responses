@@ -13,7 +13,7 @@ git clone https://github.com/rabyyuson/fillout.git
 2. Navigate to the project directory:
 
 ```bash
-cd fillout
+cd express-filtered-responses
 ```
 
 3. Install dependencies:
