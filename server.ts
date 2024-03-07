@@ -145,6 +145,9 @@ app.get("/:formId/filteredResponses", async (request: Request, response: Respons
 });
 
 // Start the Express server
-app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`);
+const server = app.listen(PORT, () => {
+    console.log(`express-filtered-responses app listening on port ${PORT}`);
 });
+
+// Export the server instance for testing purposes
+export default server;
