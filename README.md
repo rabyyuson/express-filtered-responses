@@ -79,6 +79,14 @@ and with variables replaced (note that these are only test values taken from Fil
 http://localhost:3000/vso9PzRfHQus/filteredResponses?filters[0][id]=5AtgG35AAZVcrSVfRubvp1&filters[0][condition]=equals&filters[0][value]=Email
 ```
 
+## Testing
+
+To test the functionality of this app, you can run the included test suite using the following command:
+
+```bash
+npm run test
+```
+
 ## Dependencies
 
 - Express.js

@@ -3,7 +3,7 @@ import server from "../server";
 import "dotenv/config";
 
 describe("Filtered Responses Endpoint", () => {
-    it('should return empty response shape when no data is available', async () => {
+    it("should return empty response shape when no data is available", async () => {
         try {
             const { FORM_ID } = process.env;
             const res = await request(server)
@@ -19,11 +19,11 @@ describe("Filtered Responses Endpoint", () => {
                 pageCount: 0
             });
         } catch(error) {
-            console.error('Error in test:', error);
+            console.error("Error in test:", error);
             throw error; // Rethrow the error to fail the test
         }
     });
-    
+
     it("should return filtered responses", async () => {
         try {
             const { FORM_ID } = process.env;
